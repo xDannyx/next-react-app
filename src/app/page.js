@@ -6,7 +6,10 @@ export default function Page() {
 
   return (
     <>
-      <h1>Hello, Next.js!</h1>
+      <h1>
+        Hello, Next.js! Under this header you can find the main page. No one
+        knows what I want to build LOL 😂
+      </h1>
       <button onClick={() => setCount(count + 1)}>
         You have clicked me {count} times!
       </button>
