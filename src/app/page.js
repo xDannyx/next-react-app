@@ -1,17 +1,27 @@
-"use client";
-import { useState } from "react";
+'use client';
+
+import { useRouter } from 'next/navigation';
 
 export default function Page() {
-  const [count, setCount] = useState(0);
+  const router = useRouter();
 
   return (
     <>
-      <h1>
+      <h5>
         Hello, Next.js! Under this header you can find the main page. No one
         knows what I want to build LOL 😂
-      </h1>
-      <button onClick={() => setCount(count + 1)}>
-        You have clicked me {count} times!
+      </h5>
+      <button
+        className="py-1 px-3 mx-4 bg-cyan-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-cyan-500/50"
+        onClick={() => router.push('/game/clicker')}
+      >
+        Clicker
+      </button>
+      <button
+        className="py-1 px-3 mx-4 bg-cyan-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-cyan-500/50"
+        onClick={() => router.push('/game/xo')}
+      >
+        XO Game
       </button>
     </>
   );
