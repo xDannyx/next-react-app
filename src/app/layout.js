@@ -10,13 +10,13 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
         <div>
-          <h5 className="text-3x1 font-bold underline">
-            Root Layout in the app directory applied to all routes. Here should
-            be navigation bar, because it will be visible on all routes.
-          </h5>
-          <Link href="/">Home </Link>
-          <Link href="/game/clicker">Clicker </Link>
-          <Link href="/game/xo">Game</Link>
+          <div className="flex mx-4 space-x-4">
+            <Link href="/">Home</Link>
+            <Link href="/game/clicker">Clicker</Link>
+            <Link href="/game/xo">Game</Link>
+            <Link href="/">Login via GitHub</Link>
+            <Link href="/">Register</Link>
+          </div>
           {children}
           <Analytics />
         </div>
