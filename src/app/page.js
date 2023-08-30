@@ -12,7 +12,7 @@ export default function Page() {
         knows what I want to build LOL 😂
       </h5>
       <button
-        className="py-1 px-3 mx-4 bg-cyan-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-cyan-500/50"
+        className="py-1 px-3 bg-cyan-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-cyan-500/50"
         onClick={() => router.push('/game/clicker')}
       >
         Clicker
